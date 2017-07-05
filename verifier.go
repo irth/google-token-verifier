@@ -32,7 +32,7 @@ func (v *Verifier) FetchKeys() error {
 // See the Valid field to see if it's valid.
 type GoogleAuthTokenClaim struct {
 	jwt.StandardClaims
-	Name *string `json:"name,omitempty"`
+	Name string `json:"name,omitempty"`
 }
 
 // ErrTokenInvalid is an error returned when the token couldn't be verified
